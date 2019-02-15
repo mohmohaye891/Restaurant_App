@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_marginLeft="@dimen/margin_xlarge"
+    android:layout_marginRight="@dimen/margin_xlarge"
+    android:layout_marginTop="@dimen/margin_medium_2"
+    card_view:cardElevation="@dimen/margin_medium_2"
+    app:cardCornerRadius="@dimen/margin_medium_2"
+    app:cardBackgroundColor="#757575">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="@dimen/margin_small"
+        android:background="@drawable/bg_image">
+
+        <ImageView
+            android:id="@+id/iv_circle_home"
+            android:layout_width="@dimen/home_icon_width"
+            android:layout_height="@dimen/home_icon_height"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:src="@drawable/icon_home"/>
+
+        <TextView
+            android:id="@+id/tv_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food_name"
+            android:textSize="@dimen/text_regular_2x"
+            android:textColor="@color/color_white"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_toRightOf="@+id/iv_circle_home"/>
+
+        <TextView
+            android:id="@+id/tv_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_food_name"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:textStyle="bold"
+            android:textColor="@color/color_white"
+            android:layout_alignStart="@+id/tv_food_name"
+            android:text="4.0"/>
+
+        <RatingBar
+            android:id="@+id/rb_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            style="?android:attr/ratingBarStyleSmall"
+            android:stepSize="0.1"
+            android:rating="3"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_below="@+id/tv_food_name"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:theme="@style/RatingBar"
+            android:layout_toRightOf="@+id/tv_num1"/>
+
+        <TextView
+            android:id="@+id/tv_num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(230)"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_below="@+id/tv_food_name"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:textColor="@color/color_white"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/rb_rating"/>
+
+        <ImageView
+            android:layout_width="@dimen/home_icon_width"
+            android:layout_height="@dimen/home_icon_height"
+            android:src="@drawable/circle_up_arrow"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium_3"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_num1"
+            android:layout_toRightOf="@+id/iv_circle_home"
+            android:textStyle="bold"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:layout_alignStart="@+id/tv_num1"
+            android:textColor="@color/color_white"
+            android:text="@string/food_item_description"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

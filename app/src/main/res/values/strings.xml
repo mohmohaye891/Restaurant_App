@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Restaurant_App</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_title">Discover Restaurants</string>
+    <string name="food_name">Mexican Bite</string>
+    <string name="food_description">I have a collection of food props and noticed that  I have a disproportionate number of bowls compared to plates. Bowls make me happy. This was shot on a white tablecloth in my studio with natural light from a south facing window and some additional light from my Westcott  2 x 2  flex mat LED light as 30% bightness.</string>
+    <string name="tab1">DETAILS</string>
+    <string name="tab2">MENU</string>
+    <string name="tab3">REVIEWS</string>
+    <string name="food_item_title">Pickle, jam and chutney</string>
+    <string name="food_item_description">Mexicab . 18 Thank House Lane Hip spot for Mexican tapas with a patio Open until 12:00 AM</string>
+</resources>
